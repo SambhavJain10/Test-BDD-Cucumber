@@ -1,3 +1,4 @@
+@dataTable
 Feature: Login Feature with DataTable as List
   	In order to perform successful login
   	As a user
