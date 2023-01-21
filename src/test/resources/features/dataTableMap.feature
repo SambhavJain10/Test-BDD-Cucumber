@@ -1,5 +1,4 @@
-@dataTable
-Feature: Login Feature with DataTable as List
+Feature: Login Feature with DataTable as Map
   	In order to perform successful login
   	As a user
   	I have to enter correct usrername and password.
@@ -9,8 +8,11 @@ Feature: Login Feature with DataTable as List
     When user validates login page title
     Then user enters the "valid" username
     And user enters the "valid" password
-    And user enters firstname and firstname
-      | Sambhav   | Jain    |
-      | Cristiano | Ronaldo |
+    And user enters firstname and lastname
+      | firstname | lastname |
+      | Sambhav   | Jain     |
+      | Cristiano | Ronaldo  |
     And user validates catpcha image
     And user clicks on sign-in button
+    Examples:
+      |  |
